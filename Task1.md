@@ -8,17 +8,42 @@
 
 ## Инструкция
 
-1) Создай сцену для главного меню.
+Создай сцену для главного меню.
 
-2) Создай в нем канвас и три кнопки (Начать игру, Включить звук, Выход)
+Создай в сцене канвас и не забудь настроить его canvas scaler комопнент
 
-Классный сайт с [генератором палитр](https://coolors.co/ffba49-20a39e-ef5b5b-23001e-a4a9ad) Можно взять цвета оттуда, просто нажимай пробел, чтобы найти хорошие сочетания цветов. Код цвета задан в виде 16-ричного числа и в Unity он кодируется таким же образом.
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/canvas_scaler.png" width="400"/>
 
-Пишем общий скрипт.
+Создай две кнопки и расположи их по центру экрана, друг под другом.
 
-3) Начать игру
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/main_menu.png" width="400"/>
 
-4) Включить звук
+Создай еще одну кнопку в угул экрана. Удали у нее текстовую составляющую, спрайт кнопки замени на иконку звука. Можешь поискать ее в интернете или взять наш [вариант](https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/SoundOn.png).
 
-5)Выход
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/sound_button.png" width="400"/>
 
+Создай в сцене пустой объект, назови его MenuManager. Этот объект будет нашим хранителем скриптов для главного меню.
+
+Создай два скрипта [MainMenu](https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/scripts/MainMenu.cs) и [SoundToggle](https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/scripts/SoundToggle.cs)
+
+Скопируй содержимое скриптов и замени "???" на недостающие фрагменты кода.
+
+Добавь оба скрипта в компоненты к объекту MenuManager и не забудь навесить ссылки на спрайты иконок звука и кнопку звука.
+
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/MainMenu_components.png" width="400"/>
+
+На саму кнопку звука навесь в обработчик OnClick ссылку на скрипт **SoundToggle** и укажи метод **SoundToggleButton()**
+
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/SoundButton_OnClick.png" width="400"/>
+
+Чтобы проверить кнопку звука в игре, добавь в проект фоновую мелодию. Создай в сцене объект с AudioSource, навесь ссылку на звуковой файл и поставь галочки в PlayOnAwake и Loop.
+
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/background_sound.png" width="400"/>
+
+Аналогично навесь обработчики на кнопки Начать игру и Выход. Методы называются **GameStartButton()** и **GameExitButton()**
+
+Остался последний шаг. Создай новую сцену для основной игры, можешь назвать ее Main или Level1. Открой Build Settings и добавь обе сцены в окно настроек билда.
+
+<img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/build_settings.png" width="600"/>
+
+Запусти проект и проверь, что все работает.
