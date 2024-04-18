@@ -18,7 +18,11 @@
 
 <img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/main_menu.png" width="400"/>
 
-Создай еще одну кнопку в угул экрана. Удали у нее текстовую составляющую, спрайт кнопки замени на иконку звука. Можешь поискать ее в интернете или взять наш [вариант](https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/SoundOn.png).
+Создай еще одну кнопку в угул экрана. Удали у нее текстовую составляющую, спрайт кнопки замени на иконку звука. Можешь поискать ее в интернете или взять наш вариант.
+
+[Иконка SoundOn](https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/SoundOn.png)
+
+[Иконка SoundOff](https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/SoundOff.png)
 
 <img src="https://github.com/copetonrob/YP_Unity_M4_W5/blob/main/img/sound_button.png" width="400"/>
 
